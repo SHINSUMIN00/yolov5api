@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 기존 TextView들 -->
+    <TextView
+        android:id="@+id/tvJPNtoKRW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1000 JPY to KRW: -"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvVTNtoKRW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10000 VTN to KRW: -"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvEURtoKRW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5 EUR to KRW: -"
+        android:textSize="18sp"/>
+
+    <!-- 추가된 USD TextView -->
+    <TextView
+        android:id="@+id/tvUSDtoKRW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 USD to KRW: -"
+        android:textSize="18sp"/>
+
+    <!-- Fetch Rates 버튼 -->
+    <Button
+        android:id="@+id/btnFetchRates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Rates"
+        android:layout_gravity="center_horizontal"
+        android:onClick="fetchRates"/>
+
+</LinearLayout>

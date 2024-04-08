@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "280408626586",
+    "firebase_url": "https://linktest-c7196-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "linktest-c7196",
+    "storage_bucket": "linktest-c7196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280408626586:android:7a7ce570a642c7b94d1623",
+        "android_client_info": {
+          "package_name": "com.example.moneychange"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB30u6gvS5YpLR8zFXHOMv7fYhmhtXE89Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280408626586:android:9c9de10569b07ce44d1623",
+        "android_client_info": {
+          "package_name": "com.example.moneychange1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB30u6gvS5YpLR8zFXHOMv7fYhmhtXE89Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

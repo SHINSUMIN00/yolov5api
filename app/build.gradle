@@ -1,0 +1,67 @@
+// 프로젝트 수준 build.gradle
+
+buildscript {
+    repositories {
+        google() // Google's Maven repository
+        mavenCentral()
+    }
+    dependencies {
+        // 필요한 경우 버전을 최신으로 업데이트하세요.
+        classpath 'com.android.tools.build:gradle:7.0.4' // Android Gradle Plugin 버전을 확인하세요.
+        classpath 'com.google.gms:google-services:4.4.1' // Google Services 플러그인, 최신 버전으로 업데이트하세요.
+    }
+}
+
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services' version '4.4.1' apply false
+}
+
+android {
+    namespace 'com.example.moneychange1'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.moneychange1"
+        minSdk 34
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.firebase:firebase-firestore:24.11.0'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation platform('com.google.firebase:firebase-bom:32.8.0')
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
+
+// Google Services 플러그인 적용
+apply plugin: 'com.google.gms.google-services'
